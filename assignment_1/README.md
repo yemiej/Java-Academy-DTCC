@@ -16,7 +16,7 @@ suggest that you at least once try to download and install the JDK yourself for 
 
 Let's make sure we install the JDK, this will enable us to write Java code!
 
-Please download and install OpenJDK from [this link](https://adoptopenjdk.net/?variant=openjdk15&jvmVariant=hotspot).
+Please download and install OpenJDK from [this link](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html).
 
 ### Git
 
