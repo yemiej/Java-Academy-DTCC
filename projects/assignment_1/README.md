@@ -79,7 +79,7 @@ The goal of this assignment is for you to:
 - Assign the `variable` <u>statement</u> the value "Hello World" (if you are unsure please reference the screenshot below).
 - Press the play button to run this code and successfully see "Hello World" printed!
 
-![](./resources/assignment_1_play_hello_world.png?raw=false)
+![](resources/assignment_1_play_hello_world.png?raw=false)
 
 
 If you are able to complete this assignment you have
