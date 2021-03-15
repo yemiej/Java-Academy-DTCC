@@ -39,9 +39,6 @@ public class DogPound {
                 System.out.println(String.format("The value of variable dogsSpeech is %s", dogsSpeech));
             }
 
-
-
-
         }
         catch (Exception ex) {
 
