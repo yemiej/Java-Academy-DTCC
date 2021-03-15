@@ -1,7 +1,5 @@
 package assignment_2.basic_arithmetic;
 
-import java.util.ArrayList;
-
 public class BasicArithmetic {
 
     /*

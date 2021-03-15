@@ -1,9 +1,8 @@
-package assignment_2.people_package;
+package assignment_3.people_package;
 
 import jdk.jshell.spi.ExecutionControl;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class PeopleOperations {
     public static void main (String args []) throws ExecutionControl.NotImplementedException {

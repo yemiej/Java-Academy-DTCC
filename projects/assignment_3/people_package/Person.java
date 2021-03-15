@@ -1,4 +1,4 @@
-package assignment_2.people_package;
+package assignment_3.people_package;
 /*
     This is the class you need to work on
     If you were to create a class from scratch, please remember that the name of the class should match
