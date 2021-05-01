@@ -6,10 +6,15 @@ import java.util.Arrays;
 
 public class Main {
     public static void main (String args[]) throws Exception {
+
         String host = "127.0.0.1";
         short port = 8080;
         ServerSocket server = null;
 
+        Object what = new Object() {
+
+        };
+        
         try {
             server = new ServerSocket(port, 0, InetAddress.getByName(host));
 
@@ -46,5 +51,9 @@ public class Main {
             if(server != null)
                 server.close();
         }
+
+
+
+
     }
 }
