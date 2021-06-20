@@ -9,8 +9,7 @@ public class HighLowGame {
 
     public static void main (String args[]) throws IOException {
 
-        BufferedReader reader = new BufferedReader(
-                new InputStreamReader(System.in));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter your name!");
         String name =  reader.readLine();
         System.out.println(String.format("Welcome %s to High Low", name));
@@ -20,8 +19,9 @@ public class HighLowGame {
         int low = 0;
         int max = 10;
         int answer =  ThreadLocalRandom.current().nextInt(low, max + 1);
-        while(true) {
-            System.out.println(String.format("Please input an integer %s!", name));
+        int attempts=5;
+        while(attempts != 0) {  //Loop Beginning
+            System.out.println(String.format("Please input an integer %s! ", name));
             int guess = Integer.parseInt(reader.readLine());
 
             if(guess == answer) {
@@ -29,8 +29,21 @@ public class HighLowGame {
                 break;
             }
 
-            // Add the conditions to tell the player whether they should guess higher or lower!
+            if(guess < answer){
+                System.out.println(String.format("The value of guess %s is too low, guess higher ", String.valueOf(guess)));
+            }
+            else if(guess > answer){
+                System.out.println(String.format("The value of guess %s is too high, guess lower ", String.valueOf(guess)));
 
-        }
+            }
+            else{
+                System.out.println(String.format("The value of guess %s is not valid !", String.valueOf(guess)));
+            }
+
+            attempts  = attempts - 1;
+            System.out.println(attempts + " more trials ");
+            System.out.println();
+
+        } // Loop End
     }
 }
