@@ -41,9 +41,7 @@ public class HighLowGame {
             }
 
             attempts  = attempts - 1;
-            System.out.println(attempts + " more trials ");
-            System.out.println();
-
+            System.out.println("\nYou are left with " + attempts + " more trial(s) ");
         } // Loop End
     }
 }
