@@ -1,3 +1,5 @@
+### Assignment 3
+
 # Assignment 3 - "Proper" Object Orientation
 
 ### Pepp Talk
