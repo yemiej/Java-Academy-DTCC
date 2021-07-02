@@ -7,5 +7,7 @@ public class PrimitiveDataTypes {
          */
 
         int i = 0;
+
+        System.out.println("The value of i = " + i);
     }
 }
