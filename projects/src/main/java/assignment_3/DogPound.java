@@ -59,8 +59,12 @@ public class DogPound {
 
                 <data type> <variable name> = <expression>
              */
+            if (n==null) {
+                throw new Exception("Please implement this function");
+            }else{
+                this.name = n;
+            }
 
-            throw new Exception("Please implement this function");
         }
 
         public String speak() {
@@ -69,7 +73,7 @@ public class DogPound {
                 when you ask them to.
              */
 
-            return null;
+            return "Woof";
         }
     }
 }
