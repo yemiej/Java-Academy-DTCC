@@ -1,44 +1,48 @@
 package assignment_3.people_package;
 
-//import jdk.jshell.spi.ExecutionControl;
 import java.util.*;
-
 import static java.util.Comparator.comparing;
 import static java.util.Comparator.comparingInt;
 
 public class PeopleOperations {
+    private static String STAR_UNDERLINE ="*************************";
+
     public static void main (String args []) {
-        /*
-            Please ensure that you create an ArrayList of Person(s) with at least 4 members
-         */
+        /* Please ensure that you create an ArrayList of Person(s) with at least 4 members      */
+
         ArrayList<Person> people =new ArrayList<>();
         people.add(new Person("Tunji",12));
         people.add(new Person("James",77));
         people.add(new Person("John",7));
         people.add(new Person("Elda",34));
         people.add(new Person("Saif",50));
+        people.add(new Person("Saif",12));
+
+        // Cloning the arraylist of people
+        ArrayList<Person> people1 = new ArrayList<Person>(people);
+        // display the original list
+        displayOriginalList(people);
 
         Person youngestPerson = getYoungestPerson(people);
         System.out.println("\n Youngest Person is "+ youngestPerson.getName() + "\n Details|" + youngestPerson);
         Person oldestPerson = getOldestPerson(people);
-        System.out.println("\n Oldest Person  is " + oldestPerson.getName() + "\n Details|" + oldestPerson );
-        ArrayList<Person> sortedByAgeList = getSortedListByAge(people);
+        System.out.println("\n Oldest Person is " + oldestPerson.getName() + "\n Details|" + oldestPerson );
+        ArrayList<Person> sortedByAgeList = getSortedListByAge(people1); //sort by reference issue
         ArrayList<Person> sortedByNameList = getSortedListByName(people, false);
 
         /*
             For the below to work where you can see what you've done, you must have
-            done the section 1 recap portion where you override the toString() method of the
-            Person class!
+            done the section 1 recap portion where you override the toString() method of the Person class!
          */
 
-        System.out.println("\nList Sorted By Age");
-        System.out.println("******************");
+        System.out.println("\n  List Sorted By Age");
+        System.out.println(STAR_UNDERLINE);
         for(Person p : sortedByAgeList) {
             System.out.println(p);
         }
 
-        System.out.println("\nList Sorted By Name ");
-        System.out.println("**********************");
+        System.out.println("\n  List Sorted By Name ");
+        System.out.println(STAR_UNDERLINE);
         for(Person p : sortedByNameList) {
             System.out.println(p);
         }
@@ -64,13 +68,12 @@ public class PeopleOperations {
                 }
             }
         }
-        return list;
+      return list;
     }
 
     public static ArrayList<Person> getSortedListByAge(ArrayList<Person> list)  {
         list.sort(comparingInt(Person::getAge));
-       // Collections.sort(list, Person.ageComparator);
-        return list;
+     return list;
     }
 
     public static ArrayList<Person> getSortedListByName(ArrayList<Person> list, boolean isAscending) {
@@ -78,6 +81,16 @@ public class PeopleOperations {
         if(!isAscending) {
             Collections.reverse(list);
         }
-        return list;
+     return list;
+    }
+
+    private static void displayOriginalList(List<Person> personList){
+        System.out.println(String.format("%2s %3s %-11s %3s", "S/No", " Id", " Name", "Age"));
+        System.out.println(STAR_UNDERLINE);
+        int sNo=0;
+        for(Person person : personList){
+            System.out.println(String.format("%2d %6s %-10s %3s", ++sNo, person.getId(), person.getName(), person.getAge()));
+        }
+        System.out.println(STAR_UNDERLINE);
     }
 }
