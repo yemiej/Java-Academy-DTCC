@@ -16,10 +16,11 @@ public class Person {
     private  int age;
     private  int id;
 
-    public Person(String name, int age) {
+    public Person(String name) {
         this.id = ThreadLocalRandom.current().nextInt(1, 1000 + 1);
         this.name = name;
-        this.age = age;
+        this.age = ThreadLocalRandom.current().nextInt(1, 99 );
+                //age;
     }
 
     @Override

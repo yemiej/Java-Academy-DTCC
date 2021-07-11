@@ -8,15 +8,15 @@ public class PeopleOperations {
     private static String STAR_UNDERLINE ="*************************";
 
     public static void main (String args []) {
-        /* Please ensure that you create an ArrayList of Person(s) with at least 4 members      */
+        /* Please ensure that you create an ArrayList of Person(s) with at least 4 members    */
 
         ArrayList<Person> people =new ArrayList<>();
-        people.add(new Person("Tunji",12));
-        people.add(new Person("James",77));
-        people.add(new Person("John",7));
-        people.add(new Person("Elda",34));
-        people.add(new Person("Saif",50));
-        people.add(new Person("Saif",12));
+        people.add(new Person("Tunji"));
+        people.add(new Person("James"));
+        people.add(new Person("John"));
+        people.add(new Person("Elda"));
+        people.add(new Person("Saif"));
+        people.add(new Person("Saif"));
 
         // Cloning the arraylist of people
         ArrayList<Person> people1 = new ArrayList<Person>(people);
@@ -48,7 +48,7 @@ public class PeopleOperations {
             System.out.println(p);
         }
 
-        System.out.println("\nAverage Age of people in the List " + averageAge);
+        System.out.println("\nAverage Age of people in the List " + String.format("%.2f",averageAge));
     }
 
     public static Person getYoungestPerson(ArrayList<Person> list) {
@@ -65,7 +65,7 @@ public class PeopleOperations {
         for(int i=0; i < lstSize; i++){
             for(int j=0; j < lstSize; j++){
                 if(list.get(i).getAge() < list.get(j).getAge()){
-                    tempPerson =  list.get(i) ;
+                    tempPerson =  list.get(i);
                     list.set(i, list.get(j));
                     list.set(j, tempPerson);
                 }
@@ -98,11 +98,11 @@ public class PeopleOperations {
     }
 
     public static double findAverageAge(List<Person> list) {
-        int noOfPersonsInList = list.size();
-        int sumOfAge=0;
+        double noOfPersonsInList = list.size();
+        double sumOfAge=0;
         for(Person person : list){
             sumOfAge = sumOfAge + person.getAge();
         }
-        return sumOfAge/noOfPersonsInList ;
+      return sumOfAge / noOfPersonsInList ;
     }
 }
