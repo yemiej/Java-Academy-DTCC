@@ -17,7 +17,7 @@ public class Person {
     private  int id;
 
     public Person(String name) {
-        this.id = ThreadLocalRandom.current().nextInt(1, 1000 + 1);
+        this.id = ThreadLocalRandom.current().nextInt(0, 1000);
         this.name = name;
         this.age = ThreadLocalRandom.current().nextInt(1, 99 );
     }

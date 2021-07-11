@@ -11,12 +11,12 @@ public class PeopleOperations {
         /* Please ensure that you create an ArrayList of Person(s) with at least 4 members    */
 
         ArrayList<Person> people =new ArrayList<>();
-        people.add(new Person("Tunji"));
-        people.add(new Person("Saif"));
+        people.add(new Person("Trae"));
+        people.add(new Person("Solomon"));
         people.add(new Person("John"));
         people.add(new Person("Elda"));
-        people.add(new Person("Saif"));
-        people.add(new Person("John"));
+        people.add(new Person("James"));
+        people.add(new Person("Solomon"));
 
         // Cloning the arraylist of people
         ArrayList<Person> people1 = new ArrayList<Person>(people);
@@ -36,13 +36,13 @@ public class PeopleOperations {
             done the section 1 recap portion where you override the toString() method of the Person class!
          */
 
-        System.out.println("\n  List Sorted By Age");
+        System.out.println("\n List Sorted By Age");
         System.out.println(STAR_UNDERLINE);
         for(Person p : sortedByAgeList) {
             System.out.println(p);
         }
 
-        System.out.println("\n  List Sorted By Name ");
+        System.out.println("\n List Sorted By Name ");
         System.out.println(STAR_UNDERLINE);
         for(Person p : sortedByNameList) {
             System.out.println(p);
