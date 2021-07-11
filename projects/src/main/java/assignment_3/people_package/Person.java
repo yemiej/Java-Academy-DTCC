@@ -20,7 +20,6 @@ public class Person {
         this.id = ThreadLocalRandom.current().nextInt(1, 1000 + 1);
         this.name = name;
         this.age = ThreadLocalRandom.current().nextInt(1, 99 );
-                //age;
     }
 
     @Override

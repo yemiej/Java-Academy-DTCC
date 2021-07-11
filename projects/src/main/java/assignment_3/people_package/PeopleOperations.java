@@ -12,11 +12,11 @@ public class PeopleOperations {
 
         ArrayList<Person> people =new ArrayList<>();
         people.add(new Person("Tunji"));
-        people.add(new Person("James"));
+        people.add(new Person("Saif"));
         people.add(new Person("John"));
         people.add(new Person("Elda"));
         people.add(new Person("Saif"));
-        people.add(new Person("Saif"));
+        people.add(new Person("John"));
 
         // Cloning the arraylist of people
         ArrayList<Person> people1 = new ArrayList<Person>(people);

@@ -21,6 +21,8 @@ public class driver {
         itemList.add(new Item("Extinguisher", Item.ItemType.Safety, 120.00, "Fire Extinguisher"));
         itemList.add(new Item("Sketchers", Item.ItemType.Footwear, 250.99, "Running Shoe"));
 
+        System.out.println("    List of Items ");
+        System.out.println("*****************************" );
         for(Item item : itemList) {
             System.out.println(item);
         }

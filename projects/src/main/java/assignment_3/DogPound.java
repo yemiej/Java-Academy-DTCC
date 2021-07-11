@@ -70,7 +70,7 @@ public class DogPound {
                 <data type> <variable name> = <expression>
              */
             if (n==null) {
-                throw new Exception("Please implement this function");
+                throw new Exception("Value entered is null. Please enter a valid value");
             }else{
                 this.name = n;
             }
@@ -87,3 +87,5 @@ public class DogPound {
         }
     }
 }
+
+// This assignment is not that clear and this is my attempt.
