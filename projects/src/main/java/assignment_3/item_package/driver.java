@@ -19,7 +19,7 @@ public class driver {
         itemList.add(new Item("Vanilla", Item.ItemType.Food, 12.39, "Ice Cream"));
         itemList.add(new Item("Knife", Item.ItemType.Weapon, 70.00, "Pocket Knife"));
         itemList.add(new Item("Extinguisher", Item.ItemType.Safety, 120.00, "Fire Extinguisher"));
-        itemList.add(new Item("Shoe", Item.ItemType.Footwear, 250.99, "Running Shoe"));
+        itemList.add(new Item("Sketchers", Item.ItemType.Footwear, 250.99, "Running Shoe"));
 
         for(Item item : itemList) {
             System.out.println(item);

@@ -58,12 +58,5 @@ public class Item {
                 " Description : " + description  + "\n" +
                 "********************************" ;
     }
-    public String toString1() {
-        return "Item{" +
-                "name = '" + name + '\'' +
-                ", type = '" + type + '\'' +
-                ", price = " + price +
-                ", description = '" + description + '\'' +
-                '}';
-    }
+
 }
