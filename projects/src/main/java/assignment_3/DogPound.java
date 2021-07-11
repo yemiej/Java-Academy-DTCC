@@ -39,15 +39,25 @@ public class DogPound {
 
 
     public static class Dog {
-        /*
-            Modify Me
-         */
-        public int age;
-        public String name;
+
+        private int age;
+        private String name;
 
         public Dog() {
-            age = -1;
-            name = null;
+            this.age = age;
+            this.name = name;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public void setAge(int age) {
+            this.age = age;
+        }
+
+        public String getName() {
+            return name;
         }
 
         public void setName(String n) throws Exception {

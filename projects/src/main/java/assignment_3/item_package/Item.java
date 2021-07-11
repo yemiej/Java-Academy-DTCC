@@ -52,6 +52,13 @@ public class Item {
 
     @Override
     public String toString() {
+        return  " Name  : " + name + "\n" +
+                " Type  : " + type + "\n" +
+                " Price : $" + String.format("%,.2f", price) + "\n" +
+                " Description : " + description  + "\n" +
+                "********************************" ;
+    }
+    public String toString1() {
         return "Item{" +
                 "name = '" + name + '\'' +
                 ", type = '" + type + '\'' +
